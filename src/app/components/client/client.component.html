@@ -1,0 +1,12 @@
+<form (ngSubmit)="submitForm()" #clientForm="ngForm">
+  <div class="form-group clie">
+    <label for="name">Nombre:</label>
+    <input type="text" class="form-control clieninput" id="name" name="name" [(ngModel)]="clientName" required>
+    <label for="address">Dirección:</label>
+    <input type="text" class="form-control clieninput" id="address" name="address" [(ngModel)]="clientAddress" required>
+    <button type="submit" class="btn btn-primary clie">Enviar</button>
+
+
+</div>
+
+</form>

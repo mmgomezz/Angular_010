@@ -1,0 +1,82 @@
+
+<nav class="navbar1">
+  <ul>
+    <li class="menu-item">
+      <i class="fas fa-shipping-fast"></i>
+      <strong>Envios a toda Colombia</strong>
+    </li>
+    <li class="menu-item">
+      <i class="fas fa-envelope"></i>
+      <a href="#">Contáctanos</a>
+    </li>
+    <li class="menu-item">
+      <i class="fas fa-user"></i>
+      <a href="#">Iniciar Sesión</a>
+    </li>
+  </ul>
+</nav>
+
+
+<nav class="navbar">
+  <div class="navbarlogo">
+    <img src="assets/imgg.png">
+
+  </div>
+  <div class="navbar-menu">
+    <ul>
+        <li class="dropdown">
+            <a href="#">Colecciones</a>
+            <div class="dropdown-content ">
+                <ul class="collections-column">
+                    <li><a href="#" class="collection-link">Colección 1</a></li>
+                    <li><a href="#" class="collection-link">Colección 2</a></li>
+                    <li><a href="#" class="collection-link">Colección 3</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#">Hombre</a></li>
+        <li><a href="#">Mujer</a></li>
+        <li><a href="#">Accesorios</a></li>
+
+        <li><a href="#" class="gafas">Gafas A 199.900</a></li>
+        <li><a href="#" class="oferta">Súper Ofertas</a></li>
+    </ul>
+</div>
+
+
+
+
+  <div class="navbar-cart" (click)="onToggleCart()">
+    <div class="navbar-cart-items" *ngIf="(myCart$ | async)?.length">
+      <p>{{ (myCart$ | async)?.length }}</p>
+    </div>
+    <div class="icon-container">
+
+    <i class="fa-solid fa-search icon" style="font-size: 24px;"></i> 
+    <i class="fa-solid fa-heart icon" style="font-size: 24px;"></i> 
+    <i class="fa-solid fa-cart-shopping icon" style="font-size: 24px;"></i> 
+  </div>
+</div>
+
+</nav>
+<div class="cart" [ngClass]="{ show: viewCart }">
+  <app-cart></app-cart>
+</div>
+
+<nav class="navbar3">
+  <ul>
+    <li class="menu-item">
+      <i class="fas fa-shield-alt"></i>
+      <a> Seguridad en tu compra</a>
+    </li>
+    <li class="menu-item">
+      <i class="fas fa-shipping-fast"></i>
+      <a>Entrega en 24 horas en la
+        ciudad de Bogotá</a>
+    </li>
+    <li class="menu-item">
+      <i class="fas fa-certificate"></i>
+      <a > 3 años de garantia invicta</a>
+    </li>
+  </ul>
+</nav>

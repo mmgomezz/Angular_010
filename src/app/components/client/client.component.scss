@@ -1,0 +1,39 @@
+
+.clie {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #FEEE00; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.clie label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.clieninput {
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.clie button {
+  width: 50%;
+  align-self: center;
+  border: none;
+  border-radius: 0.25rem;
+  margin: 0.75rem 0;
+  background-color: #030301;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+
+}
+
